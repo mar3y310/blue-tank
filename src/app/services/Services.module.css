@@ -1,0 +1,350 @@
+/* services */
+
+/* تنسيق القسم العام */
+.services {
+    background-color: #ffffffaf;
+    text-align: center;
+    padding: 80px 50px;
+  }
+  
+  /* عنوان القسم */
+  .serviceHeading {
+    text-align: center;
+    color: #1d2b4d;
+    font-size: 42px;
+    font-weight: 700;
+    position: relative;
+    padding: 10px 0;
+  }
+  
+  .serviceHeading::before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 5px;
+    background-color: #00a0dc;
+    left: 5%;
+    bottom: 0;
+  }
+  
+  /* حاوية الخدمات */
+  .servicesContainer {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* تنسيق العنصر الأساسي */
+  .service {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 380px;
+    /* padding: 20px;/ */
+    background: linear-gradient(135deg, #ffffff 0%, #f3f3f3 100%);
+    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition:  box-shadow 0.3s ease;
+    box-sizing: border-box;
+  min-height: 600px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  /* تأثير التحويم */
+  .service:hover {
+  
+    box-shadow: 0 15px 30px rgba(0, 102, 255, 0.3);
+  }
+  
+  /* صورة الخدمة */
+  .service .serviceImg {
+    width: 100%;
+  height: 280px;
+  
+   
+    
+    overflow: hidden;
+  }
+  
+  .serviceImg img {
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  /* عنوان الخدمة */
+  .service h2 {
+    color: #00a0dc;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0;
+    
+  }
+  
+  /* وصف الخدمة */
+  .service p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    max-width: 100%;
+    word-wrap: break-word;
+    line-height: 1.6;
+    padding: 0 20px;
+    min-height: 120px;
+  }
+  
+  /* زر الخدمة */
+  .service button {
+    padding: 15px 35px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #1d2b4d 50%, #00a0dc 50%);
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+    transition: 0.4s ease;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  
+  .service button:hover {
+    background-position: 0% 100%;
+    color: #1d2b4d;
+    font-weight: 600;
+  }
+  
+  /* ✅ التصميم المتجاوب */
+  @media (max-width: 768px) {
+    .services {
+        padding: 50px 20px;
+    }
+  
+    .service {
+        width: 90%;
+    }
+  
+    .serviceHeading {
+        font-size: 32px;
+    }
+  }
+  .serviceHeading::before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 5px;
+    background-color: #00a0dc;
+    left: -20%;
+    transform: translateX(10%);
+    bottom: 0;
+  }
+  @media (max-width: 480px) {
+    .service {
+        width: 100%;
+        padding: 15px;
+    }
+  
+    .service h2 {
+        font-size: 24px;
+    }
+  
+    .service p {
+        font-size: 14px;
+    }
+  
+    .service button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+  }
+
+  /* aims */
+.aims {
+    background-color: #ffffff;
+    padding: 20px 0;
+  }
+  .aimContainer {
+    display: flex;
+    gap: 150px;
+    align-items: center;
+  }
+  
+  .aims h2 {
+    margin-top: 40px;
+    font-size: 53px;
+    font-weight: 600;
+    color: #00a0dc;
+  }
+  .rightAim ul li {
+    display: flex;
+    align-items: start;
+    gap: 7px;
+    margin: 30px 0;
+  }
+  
+  .aimIcon {
+    font-size: 35px;
+    color: #00a0dc;
+    padding:5px;
+    background-color: #1d2b4d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    stroke: #00a0dc; /* تحديد لون الخط */
+    stroke-width: 70; /* زيادة سماكة الخط */
+  }
+  .rightAim ul li span {
+    font-size: 19px;
+    text-align: start;
+    
+  }
+  
+  .leftAim {
+    width: 450px;
+  }
+  .leftAim .aimLogo {
+    height: auto;
+    object-fit: cover;
+  }
+  @media (max-width: 1070) {
+    .aimContainer {
+      gap: 20px;
+    }
+  
+    .aims h2 {
+      font-size: 43px;
+      font-weight: 600;
+      color: #00a0dc;
+    }
+    .rightAim ul li {
+      min-width: 550px;
+      margin: 25px 0;
+    }
+  
+    
+  }
+  @media (max-width: 800px) {
+    .aimContainer {
+      flex-direction: column;
+    }
+    .aims h2 {
+      font-size: 33px;
+      font-weight: 600;
+      color: #00a0dc;
+      padding: 0 20px;
+  
+    }
+    .rightAim ul li {
+      min-width: 250px;
+      margin: 25px 0;
+      font-size: 18px;
+      padding: 0 20px;
+    }
+  
+   
+    .leftAim {
+      width: 250px;
+    }
+    .rightAim ul li span {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 400px) {
+    .aims h2 {
+      font-size: 23px;
+      font-weight: 600;
+      color: #00a0dc;
+    }
+    .rightAim ul li {
+      min-width: 100px;
+      margin: 25px 0;
+      font-size: 12px;
+  
+    }
+    .rightAim ul li span {
+      font-size: 14px;
+    }
+  
+    
+    .leftAim {
+      width: 200px;
+    }
+  }
+
+
+  /* service details */
+  .DetailsContainer{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .detailsContent {
+    max-width: 600px;
+  }
+  .detailsContent h2{
+    font-size: 46px;
+    color: #00a0dc;
+    margin-bottom: 15px;
+  }
+  .detailsContent p {
+    font-size: 22px;
+    color: #1d2b4d;
+    line-height: 1.8;
+  }
+  .detailsImg{
+    width: 450px;
+  
+  }
+
+  @media (max-width:800px) {
+    .DetailsContainer{
+      padding-top: 30px;
+
+flex-direction: column;
+padding-left:20px ;
+padding-right:20px ;
+    }
+    .detailsContent {
+   
+      margin-bottom: 10px;
+      
+    }
+    .detailsContent h2{
+      font-size: 36px;
+   
+      margin-bottom: 15px;
+    }
+    .detailsContent p {
+      font-size: 18px;
+    
+    }
+   
+  }
+  @media (max-width:500px) {
+    .DetailsContainer{
+      padding-top: 30px;
+      flex-direction: column;
+      align-items: center;
+    
+    }
+    .detailsContent {
+      max-width: 600px;
+      text-align: center;
+    }
+    .detailsContent h2{
+      font-size: 26px;
+      color: #00a0dc;
+      margin-bottom: 15px;
+    }
+    .detailsContent p {
+      font-size: 16px;
+      
+    }
+    .detailsImg{
+      width: 250px;
+    margin-bottom: 10px;
+    }
+  }

@@ -1,0 +1,325 @@
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link ,.active{
+    position: relative;
+    cursor: pointer;
+       color: #1d2b4d;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 0 5px;
+    
+}
+.link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 0px;
+    background: rgba(0, 160, 220, 0.5);
+    transition: 0.1s ease;
+ 
+}
+.active{
+   border-bottom: 8px solid rgba(0, 160, 220, 0.5) ;
+   
+}
+.activeDrop{
+    background: rgba(0, 160, 220);
+    color: rgb(29, 43, 77);
+    /* letter-spacing: 0.7px; */
+    padding-right: 18px;
+}
+.link:hover::before {
+    height: 8px;
+}
+.activeSideLink{
+    color: #00a0dc !important;
+}
+
+
+
+.dropdown {
+    position: absolute;
+    top: calc(100% - 5px);
+    right: 0;
+    background: #1d2b4d;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+   
+    padding: 10px;
+    list-style: none;
+    z-index: 10;
+    width: 260px;
+    margin-top: 10px;
+    color: #f3f3f3;
+    font-size: 16px;
+}
+
+.dropdown li {
+    padding: 8px 12px;
+transition: 0.1s ease;
+}
+
+.dropdown li:hover {
+    background: rgba(0, 160, 220);
+    color: rgb(29, 43, 77);
+    /* letter-spacing: 0.7px; */
+    padding-right: 18px;
+}
+.menuIcon{
+    display: none;
+    position: relative;
+    cursor: pointer;
+    color: #00a0dc;
+    background-color: #1d2b4d;
+    border-radius: 30px;
+    font-size:30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* جعل السايد بار مثبتًا */
+.fixed {
+    position: fixed;
+    top: 0;
+    right: -70vw;
+    height: 100vh;
+    width: 70vw;
+    background: linear-gradient(to top, #0c0f14, #2c395a);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1001;
+  transition: 0.5s;
+    overflow-y: auto;
+    display: none;
+
+}
+.fixed.open{
+    right: 0;
+}
+.sideContainer{
+   
+    height: 100%;
+    display: flex;
+
+flex-direction: column;}
+/* تصميم قائمة الروابط الجانبية */
+.sidelinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ 
+
+    flex-grow: 0.9;
+
+
+}
+
+/* تصميم الرابط الفردي */
+.sidelink {
+    padding: 12px;
+    border-bottom: 1px solid rgb(29, 42, 73);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+  
+        color: #eaeaea;
+   
+    position: relative;
+}
+.sidelink:hover{
+    color: #00a0dc;
+}
+.sidelink:hover .siddropdown{
+    color: #eaeaea;
+}
+/* تأثير زحزحة الروابط على خدماتنا فقط */
+.sidelink.services {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.sidelink.services.open {
+    margin-bottom: 125px; /* زحزحة عند التحويم على "خدماتنا" فقط */
+}
+
+/* الروابط الداخلية */
+
+
+/* القائمة المنسدلة */
+.siddropdown {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    
+   
+    background:transparent;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(29, 42, 73);
+  
+}
+.sidelink.services .siddropdown {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+/* إظهار القائمة عند التحويم */
+.sidelink.services:hover .siddropdown,
+.sidelink.services .siddropdown.open {
+    max-height: 200px; /* تعديل حسب عدد العناصر */
+    opacity: 1;
+    visibility: visible;
+}
+/* تصميم عناصر القائمة المنسدلة */
+.siddropdown li {
+    padding: 10px;
+    border-bottom: 1px solid rgb(44, 56, 83);
+
+    transition: background-color 0.3s ease;
+}
+
+/* .siddropdown li:last-child {
+    border-bottom: none;
+} */
+
+
+
+.siddropdown li:hover  {
+  color: #00a0dc;
+
+}
+
+/* الأيقونة مع النص */
+.sidelink span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.closeIcon{
+    display: none;
+    position: fixed;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    top: 20;
+    right:calc(70vw + 10px) ;
+
+
+transition: 0.3s;z-index: 1000;
+}
+.closeIcon:hover{
+    rotate: 180deg;
+}
+.overlay{
+    position: fixed;
+   inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+  display: none;
+   
+}
+.openDropIcon{
+   position: absolute;
+   left: 0;
+   
+   height: 100%;
+ padding: 11px;
+ width: 35px;
+
+
+
+
+   border-right: 1px solid rgba(167, 167, 167, .2);
+}
+
+.socialIconContainer{
+   
+    /* margin-top: calc(65vh - 144px); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.socialIconList{
+    display: flex;
+    gap: 5px;
+}
+.socialIconItem{
+width: 40px;
+height: 40px;
+background-color:#00a0dc;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.socialIcon{
+ 
+    color: #1d2b4d;
+   font-size: 16px;
+ transition: 0.5s;
+}
+ 
+.socialIconItem:hover .socialIcon{
+    rotate: 360deg;
+    color: #fff;
+}
+.socialIconItem.whatsapp:hover{
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+
+}
+.socialIconItem.faceboock:hover{
+    background: linear-gradient(45deg, #1877f2, #0d47a1);
+}
+.socialIconItem.phone:hover{
+    background: linear-gradient(135deg, #34b7f1 0%, #007aff 100%);
+
+}
+
+.sideBarFooter{
+    margin-top: 10px;
+    display: flex;
+    direction: ltr;
+    gap: 2px;
+    color: #a0a0a0;
+    font-size: 14px;
+}
+@media (max-width:700px){
+    .links{
+        display: none;
+    } 
+    .menuIcon{
+        display: block;
+    }
+    .fixed{
+        display: block;
+    }
+    .closeIcon{
+        display: block;
+    }
+    .overlay{
+        display: block;
+    }
+}
+
+

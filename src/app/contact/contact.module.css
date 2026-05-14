@@ -1,0 +1,76 @@
+.contactConatiner{
+    padding-top: 70px;
+  
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    margin: 0 auto;
+  
+}
+.contactContent{
+    display: flex;
+    flex-direction: column;
+}
+.contactHeading{
+    position: relative;
+}
+.contactHeading{
+font-size: 49px;
+font-weight: 700;
+padding: 30px 0;
+}
+.primaryColor{
+    color: #00a0dc;
+    display: block;
+ font-size: 23px;
+    font-weight: 400;
+
+}
+.contactHeading::before{
+    position: absolute;
+    content: 'اتصل';
+    font-size: 100px;
+    font-weight: bold;
+    color: #00a1dc2f;
+    top: -20%;
+    z-index: -1;
+}
+.contactContent ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ 
+    margin: 15px 0;
+    transition: all 0.1s ease;
+}
+.contactContent ul li .IconBox{
+    background-color: #00a0dc;
+    color:#1d2b4d;
+    padding: 15px;
+}
+.contactContent ul li span,.contactContent ul li a{
+    color: #1d2b4d;
+    font-size: 18px;
+}
+.contactContent ul li:hover .IconBox{
+    transform: scale(1.3);
+    background-color: #1d2b4d;
+    color: #00a0dc;
+
+}
+
+.contactContent ul li:hover span,.contactContent ul li:hover a,.contactContent ul li:hover{
+  transform: translateX(-15px);
+
+}
+@media (max-width:600px){
+    .contactConatiner{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .contactConatiner .contactImg{
+       margin: 10px auto;
+       
+        width: 200px;
+    }
+}

@@ -1,0 +1,273 @@
+
+.aboutAims{
+padding-top: 100px;
+display: flex;
+gap: 30px;
+}
+.aboutAimLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 350px;
+}
+.aboutAimLeft .topSpan{
+    color: #00a0dc;
+    font-size: 30px;
+    position: relative;
+    font-weight: 500;
+}
+.aboutAimLeft .bottomSpan{
+    font-size: 41px;
+    font-weight: 700;
+}
+.aboutAimLeft .topSpan::before{
+    position: absolute;
+    content: 'حول';
+    color: #00a1dc3f;
+    font-size: 100px;
+    font-weight: bold;
+    top: -120%;
+    right: -20px;
+}
+.aboutAimRight p{
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.aboutAimRight .aboutAimRightSpan{
+    display: block;
+    max-width: 600px;
+        padding: 20px 0;
+    color: #00a0dc;
+    font-size: 30px;
+    position: relative;
+    font-weight: 500;
+}
+.aboutAimRight .aboutAimRightSpan::before{
+    position: absolute;
+    content: 'حول';
+    color: #00a1dc3f;
+    font-size: 100px;
+    font-weight: bold;
+    top: -30%;
+    right: -30px;
+}
+.Lists{
+    display: flex;
+    gap: 10px;
+}
+.Lists ul li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 10px;
+    transition: 0.2s;
+    
+}
+.Lists ul li:hover .IconBox {
+    animation: subtleRotateShake 0.5s ease-in-out ;
+    background-color: #00a0dc;
+    color: #1d2b4d;
+}
+.Lists ul li:hover{
+    transform: translateX(-15px);
+}
+.ourMassage{
+    padding: 0 20px;
+}
+.ourMassage p{
+    font-size: 18px !important;
+}
+@keyframes subtleRotateShake {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(8deg); }
+    40% { transform: rotate(-8deg); }
+    60% { transform: rotate(5deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+.Lists ul li .IconBox{
+    background-color: #1d2b4d;
+    color:#00a0dc;
+    padding: 10px;
+}
+.callSection{
+    background-color: #1d2b4d;
+    padding: 100px 16px;
+  }
+  .callContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .callContainer .callright{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .callright h2{
+    font-size: 32px;
+    font-weight: bold;
+    color: #00a0dc;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .callright h2 span{
+   display: block;
+ 
+  }
+  .callContainer a{
+    background-color: white;
+    color: #1d2b4d;
+    padding: 20px 26px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s ease;
+  }
+  .callContainer a:hover{
+    background-color: #00a0dc;
+    transform: translateY(-4px);
+  }
+  .buttonContainer{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .buttonContainer button{
+    cursor: pointer;
+    padding: 17px 17px ;
+    background-color: #1d2b4d;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  .buttonContainer button:hover{
+background-color: #00a0dc;  
+color: #1d2b4d;
+}
+  @media (max-width:1026px) {
+    .callContainer{
+      flex-direction: column;
+    }
+    .callContainer .callright{
+  flex-direction: column;
+  
+    }
+    .callright h2{
+      font-size: 20px;
+    }
+    .buttonContainer button{
+        cursor: pointer;
+        padding: 5px 7px ;
+        background-color: #1d2b4d;
+        font-size: 14px;
+    
+      }
+  }
+  @media (max-width:400px) {
+    .callright h2{
+      font-size: 12px;
+    }
+    .callImg{
+      width: 100px;
+    }
+    .callContainer a{
+      padding: 10px 16px;
+      font-size: 16px;
+    }
+  }
+@media (max-width:767px){
+    .aboutAimLeft .topSpan::before,.aboutAimRight .aboutAimRightSpan::before{
+        display: none;
+    }
+   
+    .aboutAims{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .aboutAimLeft {
+        gap: 5px;
+        width: 250px;
+    }
+    .aboutAimLeft .topSpan{
+        font-size: 18px;
+    }
+    .aboutAimLeft .bottomSpan{
+        font-size: 21px;
+    font-weight: 700; 
+    }
+   
+    .aboutAimRight .aboutAimRightSpan{
+       
+        font-size: 20px;
+      
+    }
+    .aboutAimRight p{
+        max-width: 650px;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+    .Lists{
+        flex-direction: column;
+        gap: 0;
+        margin-top: 10px;
+    }
+    .Lists ul li{
+        font-size: 16px;
+    }
+    .Lists ul:last-child {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:400px){
+    .aboutAimLeft .topSpan::before,.aboutAimRight .aboutAimRightSpan::before{
+        display: none;
+    }
+   
+   
+    .aboutAimLeft {
+        gap: 5px;
+        width: 220px;
+    }
+    .aboutAimLeft .topSpan{
+        font-size: 16px;
+    }
+    .aboutAimLeft .bottomSpan{
+        font-size: 19px;
+    font-weight: 700; 
+    }
+    .ourMassage p{
+        font-size: 14px !important;
+    }
+    .aboutAimRight .aboutAimRightSpan{
+       
+        font-size: 16px;
+      
+    }
+    .aboutAimRight p{
+        max-width: 650px;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+    .Lists{
+        flex-direction: column;
+        gap: 0;
+        margin-top: 10px;
+    }
+    .Lists ul:last-child {
+        margin-bottom: 20px;
+    }
+    .Lists ul li{
+        font-size: 14px;
+    }
+}

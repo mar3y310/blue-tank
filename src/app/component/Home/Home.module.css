@@ -1,0 +1,602 @@
+.home {
+  background-image: url("/bgimg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* تجعل الصورة ثابتة أثناء التمرير */
+  background-repeat: no-repeat;
+}
+.header {
+  width: 100%;
+  height: calc(100vh + 20vh);
+  background-image: url("/newHomeImg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .headerContent h1 {
+  background-color: rgba(0, 0, 0, 0.397);
+  font-size: 55px;
+  font-weight: 600;
+  padding: 40px;
+  color: #fff;
+  margin: 70px 0;
+  text-align: center;
+}
+.headerContactBtn {
+  font-size: 24px;
+  padding: 7px 41px;
+  color: #fff;
+  background-color: #1d2b4d;
+  border-radius: 30px;
+  transition: 1s;
+}
+.headerContactBtn:hover {
+  background-color: rgb(150, 42, 0);
+}
+@media (max-width: 1200px) {
+  .header {
+    height: 90vh;
+  }
+  .header .headerContent h1 {
+    font-size: 40px;
+
+    padding: 20px;
+
+    margin: 40px 0;
+  }
+  .headerContactBtn {
+    font-size: 22px;
+    padding: 7px 41px;
+
+    border-radius: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    height: 70vh;
+  }
+  .header .headerContent h1 {
+    font-size: 22px;
+
+    padding: 20px;
+
+    margin: 40px 0;
+  }
+  .headerContactBtn {
+    font-size: 18px;
+    padding: 7px 41px;
+
+    border-radius: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    height: 50vh;
+  }
+  .header .headerContent h1 {
+    font-size: 25px;
+
+    padding: 20px;
+
+    margin: 40px 0;
+  }
+  .headerContactBtn {
+    font-size: 18px;
+    padding: 7px 41px;
+
+    border-radius: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    height: 29vh;
+  }
+  .header .headerContent h1 {
+    font-size: 18px;
+
+    padding: 10px;
+
+    margin: 20px 0;
+  }
+  .headerContactBtn {
+    font-size: 12px;
+    padding: 7px 21px;
+  }
+}
+/* about and message */
+
+.aboutLayOut,
+.messageLayOut {
+  width: 100%;
+  background-color: rgba(61, 72, 105, 0.692); /* إضافة خلفية شبه شفافة للنصوص */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 80px;
+  text-align: center;
+}
+.aboutLogo {
+  width: 140px;
+}
+.aboutLayOut h2,
+.messageLayOut h2 {
+  font-size: 59px;
+  color: #00a0dc;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.aboutLayOut h3 {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.messageLayOut p {
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+.message button {
+  padding: 20px 41px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #1d2b4d 50%, #00a0dc 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  transition: 0.4s ease;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.message button:hover {
+  background-position: 0% 100%;
+  color: #1d2b4d;
+  font-weight: 600;
+}
+@media (max-width: 700px) {
+  .aboutLayOut,
+  .messageLayOut {
+    padding: 30px 50px;
+  }
+  .aboutLogo {
+    width: 100px;
+  }
+  .aboutLayOut h2,
+  .messageLayOut h2 {
+    font-size: 49px;
+    color: #00a0dc;
+    font-weight: 800;
+  }
+  .aboutLayOut h3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .messageLayOut p {
+    font-size: 13px;
+  }
+  .messageLayOut button {
+    padding: 15px 31px;
+  }
+}
+@media (max-width: 400px) {
+  .aboutLayOut,
+  .messageLayOut {
+    padding: 30px;
+  }
+  .aboutLogo {
+    width: 90px;
+  }
+  .aboutLayOut h2,
+  .messageLayOut h2 {
+    font-size: 39px;
+    color: #00a0dc;
+    font-weight: 800;
+  }
+  .aboutLayOut h3 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .messageLayOut p {
+    font-size: 14px;
+  }
+  .messageLayOut button {
+    padding: 10px 21px;
+  }
+}
+
+/* aims */
+.aims {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+.aimContainer {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+}
+
+.rightAim h2 {
+  font-size: 53px;
+  font-weight: 600;
+  color: #00a0dc;
+}
+.rightAim ul li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 30px 0;
+}
+
+.aimIcon {
+  font-size: 35px;
+  color: #00a0dc;
+  padding: 5px;
+  background-color: #1d2b4d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  stroke: #00a0dc; /* تحديد لون الخط */
+  stroke-width: 70; /* زيادة سماكة الخط */
+}
+.rightAim ul li span {
+  font-size: 19px;
+}
+
+.leftAim {
+  width: 450px;
+}
+.leftAim .aimLogo {
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 1070) {
+  .aimContainer {
+    gap: 20px;
+  }
+
+  .rightAim h2 {
+    font-size: 43px;
+    font-weight: 600;
+    color: #00a0dc;
+  }
+  .rightAim ul li {
+    min-width: 550px;
+    margin: 25px 0;
+  }
+
+  .aimIcon {
+    font-size: 32px;
+  }
+}
+@media (max-width: 800px) {
+  .aimContainer {
+    flex-direction: column;
+  }
+  .rightAim h2 {
+    font-size: 33px;
+    font-weight: 600;
+    color: #00a0dc;
+    padding: 0 20px;
+
+  }
+  .rightAim ul li {
+    min-width: 250px;
+    margin: 25px 0;
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .aimIcon {
+    font-size: 32px;
+  }
+  .leftAim {
+    width: 250px;
+  }
+}
+@media (max-width: 400px) {
+  .rightAim h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #00a0dc;
+  }
+  .rightAim ul li {
+    min-width: 100px;
+    margin: 25px 0;
+    font-size: 12px;
+
+  }
+  .rightAim ul li span {
+    font-size: 16px;
+  }
+
+  .aimIcon {
+    font-size: 30px;
+  }
+  .leftAim {
+    width: 200px;
+  }
+}
+
+/* services */
+
+/* تنسيق القسم العام */
+.services {
+  background-color: #ffffffaf;
+  text-align: center;
+  padding: 80px 50px;
+}
+
+/* عنوان القسم */
+.serviceHeading {
+  text-align: center;
+  color: #1d2b4d;
+  font-size: 42px;
+  font-weight: 700;
+  position: relative;
+  padding: 10px 0;
+}
+
+.serviceHeading::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 5px;
+  background-color: #00a0dc;
+  left: 5%;
+
+  bottom: 0;
+}
+
+/* حاوية الخدمات */
+.servicesContainer {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* تنسيق العنصر الأساسي */
+.service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 380px;
+  /* padding: 20px;/ */
+  background: linear-gradient(135deg, #ffffff 0%, #f3f3f3 100%);
+  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition:  box-shadow 0.3s ease;
+  box-sizing: border-box;
+min-height: 600px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* تأثير التحويم */
+.service:hover {
+
+  box-shadow: 0 15px 30px rgba(0, 102, 255, 0.3);
+}
+
+/* صورة الخدمة */
+.service .serviceImg {
+  width: 100%;
+height: 280px;
+
+ 
+  
+  overflow: hidden;
+}
+
+.serviceImg img {
+  object-fit:contain;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* عنوان الخدمة */
+.service h2 {
+  color: #00a0dc;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 15px 0;
+  
+}
+
+/* وصف الخدمة */
+.service p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+  max-width: 100%;
+  word-wrap: break-word;
+  line-height: 1.6;
+  padding: 0 20px;
+  min-height: 120px;
+}
+
+/* زر الخدمة */
+.service button {
+  padding: 15px 35px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #1d2b4d 50%, #00a0dc 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  transition: 0.4s ease;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.service button:hover {
+  background-position: 0% 100%;
+  color: #1d2b4d;
+  font-weight: 600;
+}
+
+/* ✅ التصميم المتجاوب */
+@media (max-width: 768px) {
+  .services {
+      padding: 50px 20px;
+  }
+
+  .service {
+      width: 90%;
+  }
+
+  .serviceHeading {
+      font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .service h2 {
+      font-size: 24px;
+  }
+
+  .service p {
+      font-size: 16px;
+  }
+
+  .service button {
+      padding: 10px 20px;
+      font-size: 16px;
+  }
+  .serviceHeading::before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 5px;
+    background-color: #00a0dc;
+left: -10%;
+
+    bottom: 0;
+  }
+}
+/* features */
+
+.feature h1{
+  font-size: 53px;
+  font-weight: 600;
+  color: #1d2b4d;
+  text-align: center;
+  padding: 40px 0;
+}
+.featureContainer{
+  display: flex;
+  justify-content: space-between;
+ padding: 0 30px;
+margin-top: 20px;
+
+}
+.feature ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 40px 0;
+}
+.feature .featureImg{
+  width: 350px;
+}
+@media (max-width:700px) {
+  .featureContainer{
+    flex-direction: column;
+    
+  }
+  .feature .featureImg{
+    width: 150px;
+  }
+  .feature h1{
+    font-size: 23px;
+  
+    padding: 20px 0;
+  }
+ 
+  .feature ul li {
+    font-size: 16px;
+    margin: 30px 0;
+  }
+}
+
+/* call */
+.callSection{
+  background-color: rgb(241, 241, 241);
+  padding: 100px 16px;
+}
+.callContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.callContainer .callright{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.callright h2{
+  font-size: 32px;
+  font-weight: bold;
+  color: #00a0dc;
+  margin-bottom: 20px;
+  display: flex;
+}
+.callright h2 span{
+ display: block;
+color: black;
+}
+.callContainer a{
+  background-color: white;
+  color: #1d2b4d;
+  padding: 20px 26px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+.callContainer a:hover{
+  background-color: #00a0dc;
+  transform: translateY(-4px);
+}
+@media (max-width:1026px) {
+  .callContainer{
+    flex-direction: column;
+  }
+  .callContainer .callright{
+flex-direction: column;
+
+  }
+  .callright h2{
+    font-size: 20px;
+  }
+}
+@media (max-width:400px) {
+  .callright h2{
+    font-size: 14px;
+  }
+  .callImg{
+    width: 100px;
+  }
+  .callContainer a{
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+}
+
+

@@ -1,0 +1,50 @@
+.trustedSection {
+    padding: 4rem 2rem; /* زيادة التباعد */
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px; /* تحديد عرض معين للمحتوى */
+    margin: 0 auto; /* توسيط المحتوى */
+  }
+  
+  .title {
+    font-size: 2.5rem; /* تكبير العنوان */
+    font-weight: bold;
+    color: #00a0dc;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1.25rem; /* تكبير النص */
+    line-height: 1.8; /* تحسين المسافات بين الأسطر */
+    color:  #1d2b4d; /* لون هادئ للنص */
+    margin-bottom: 3rem;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: center; /* توسيط الكروت */
+    gap: 2rem; /* مسافة بين الكروت */
+    flex-wrap: wrap; /* السماح بتغليف العناصر */
+  }
+  
+  .partnerCard {
+    width: 250px; /* ضبط حجم الكارت */
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* خلفية بيضاء */
+    border: 1px solid #ddd; /* إضافة إطار خفيف */
+    border-radius: 8px; /* زوايا مستديرة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير الحركة */
+  }
+  
+  .partnerCard:hover {
+    transform: scale(1.1); /* تكبير عند التمرير */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* زيادة الظل */
+  }
+  
