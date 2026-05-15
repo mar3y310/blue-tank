@@ -4,10 +4,10 @@ import React from 'react'
 import styles from './about.module.css'
 const CatalogButton = () => {
     const handleOpenCatalogPdf = () => {
-        window.open('/catalog.pdf', '_blank');
+        window.open('/newCatalog.pdf', '_blank');
     };
     const handleOpenDependPdf = () => {
-        window.open('/depend.pdf', '_blank');
+        window.open('/newdependant.pdf', '_blank');
     };
   return (
 <div className={styles.buttonContainer}>
