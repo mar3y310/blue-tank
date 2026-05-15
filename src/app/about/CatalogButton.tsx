@@ -7,7 +7,7 @@ const CatalogButton = () => {
         window.open('/newCatalog.pdf', '_blank');
     };
     const handleOpenDependPdf = () => {
-        window.open('/newdependant.pdf', '_blank');
+        window.open('/dependant.pdf', '_blank');
     };
   return (
 <div className={styles.buttonContainer}>

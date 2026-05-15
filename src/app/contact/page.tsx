@@ -29,7 +29,7 @@ const ContactPage = () => {
          <div className={styles.IconBox}>
          <FaLocationDot size={20}  className={styles.contentIcon} />
          </div>
-            <span>طريق مصر إسكندرية الزراعي الكيلو 17 قليوب القليوبية</span>
+            <span>  قليوب_طريق مصر اسكندرية الزراعي خلف شركة توشيبا العربي</span>
           </li>
         </ul>
       </div>
@@ -41,7 +41,7 @@ const ContactPage = () => {
 }
 export const metadata: Metadata = {
   title: " تواصل معنا - بلو تانك ",
-  description: "تواصل مع شركه الوادي تانك",
+  description: "تواصل مع شركه بلو تانك",
 };
 
 export default ContactPage
