@@ -37,6 +37,18 @@
   border-radius: 30px;
   transition: 1s;
 }
+.headerPriceBtn {
+  font-size: 24px;
+  padding: 7px 41px;
+  color: #fff;
+  background-color: #25d366;
+  border-radius: 30px;
+  transition: 1s;
+}
+
+.headerPriceBtn:hover {
+  background-color: #128c7e;
+}
 .headerContactBtn:hover {
   background-color: rgb(150, 42, 0);
 }

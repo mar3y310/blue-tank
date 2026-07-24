@@ -24,15 +24,27 @@ const Home = () => {
         <meta name="robots" content="index, follow" />
       </Head>
       <div className={styles.home}>
-        <section className={`${styles.header} `}>
-          <div className={styles.headerContent}>
-            <h1 className=" ">مصنع بلوتانك لصناعه خزانات عاليه الجوده</h1>
-            <Link href="/contact" className={`${styles.headerContactBtn} `}>
-              <button>تواصل معنا </button>{" "}
-              {/* استخدام زر بدلاً من رابط مباشر لتحسين الوصولية */}
-            </Link>
-          </div>
-        </section>
+      <section className={styles.header}>
+  <div className={styles.headerContent}>
+    <h1>مصنع بلوتانك لصناعه خزانات عاليه الجوده</h1>
+
+    <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+      <Link href="/contact" className={styles.headerContactBtn}>
+        <button>تواصل معنا</button>
+      </Link>
+
+     <a
+  href="https://wa.me/201234567890?text=السلام عليكم، أرغب في معرفة سعر المنتج."
+  target="_blank"
+  rel="noopener noreferrer"
+
+  className={styles.headerPriceBtn}>
+  <span>💰</span>
+  <span>عرض السعر</span>
+</a>
+    </div>
+  </div>
+</section>
 
         {/* about */}
 
