@@ -63,7 +63,7 @@
 
     margin: 40px 0;
   }
-  .headerContactBtn {
+  .headerContactBtn,.headerPriceBtn {
     font-size: 22px;
     padding: 7px 41px;
 
@@ -81,7 +81,7 @@
 
     margin: 40px 0;
   }
-  .headerContactBtn {
+  .headerContactBtn,.headerPriceBtn {
     font-size: 18px;
     padding: 7px 41px;
 
@@ -117,7 +117,7 @@
 
     margin: 20px 0;
   }
-  .headerContactBtn {
+  .headerContactBtn,.headerPriceBtn {
     font-size: 12px;
     padding: 7px 21px;
   }

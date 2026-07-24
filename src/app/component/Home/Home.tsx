@@ -34,7 +34,7 @@ const Home = () => {
       </Link>
 
      <a
-  href="https://wa.me/201234567890?text=السلام عليكم، أرغب في معرفة سعر المنتج."
+  href="https://wa.me/201027565956?text=السلام عليكم، أرغب في معرفة سعر المنتج."
   target="_blank"
   rel="noopener noreferrer"
 
