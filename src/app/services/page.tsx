@@ -6,6 +6,7 @@ import AfterSell from './AfterSell'
 
 import { Metadata } from 'next'
 import TankCalculator from '../component/TankCalculator/TankCalculator'
+import Tanksise from '../component/Tanksize/Tanksise'
 const SevicesPage = () => {
   return (
     <section className={styles.services}>
@@ -34,6 +35,7 @@ const SevicesPage = () => {
 "   serviceImg={"/serviceImg3.jpeg"}   description={"مثل (خزانات المياه – اكشاك الحراسة – ألعاب الأطفال – صناديق الدليفري  – الاكوا بارك   )"}  dirctUrl={"/services/service3"}/>
           </div>
             <TankCalculator/>
+            <Tanksise/>
           <AfterSell/>
           
         
