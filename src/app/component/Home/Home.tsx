@@ -11,6 +11,8 @@ import "animate.css";
 import CallUs from "../CallUs/CallUs";
 import React from "react";
 import Trust from "../Trust/Trust";
+import TankCalculator from "../TankCalculator/TankCalculator";
+
 
 const Home = () => {
   return (
@@ -23,6 +25,7 @@ const Home = () => {
         />
         <meta name="robots" content="index, follow" />
       </Head>
+    
       <div className={styles.home}>
       <section className={styles.header}>
   <div className={styles.headerContent}>
@@ -167,6 +170,7 @@ const Home = () => {
             />
           </div>
         </section>
+        <TankCalculator />
         {/* feature  */}
         <section className={`${styles.feature}   bg-white`}>
           <h1>ليه تختار خزانات بلو تانك</h1>

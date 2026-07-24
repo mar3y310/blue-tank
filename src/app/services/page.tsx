@@ -1,8 +1,11 @@
 import React from 'react'
 import styles from './Services.module.css'
 import Service from '../component/Home/Service'
+
 import AfterSell from './AfterSell'
+
 import { Metadata } from 'next'
+import TankCalculator from '../component/TankCalculator/TankCalculator'
 const SevicesPage = () => {
   return (
     <section className={styles.services}>
@@ -30,7 +33,10 @@ const SevicesPage = () => {
             <Service title="جميع منتجات الفيبر جلاس
 "   serviceImg={"/serviceImg3.jpeg"}   description={"مثل (خزانات المياه – اكشاك الحراسة – ألعاب الأطفال – صناديق الدليفري  – الاكوا بارك   )"}  dirctUrl={"/services/service3"}/>
           </div>
+            <TankCalculator/>
           <AfterSell/>
+          
+        
         </section>
   )
 }
